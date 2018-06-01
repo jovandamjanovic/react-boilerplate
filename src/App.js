@@ -9,12 +9,14 @@ import store from './store';
 
 const appStore = createStore(
     store,
+    // @ts-ignore
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 render(
     <Provider store={appStore}>
         <div>
+                        // @ts-ignore
             <Counter />
         </div>
     </Provider>, 
